@@ -50,7 +50,7 @@ def delete_product(request, product_id):
 
 # Displaying products on the landing page
 def landing_page(request):
-    products = Product.objects.filter()
+    products = Product.objects.all()
     return render(request, 'landing_page.html', {'products': products})
 
 # More details about product(s)
