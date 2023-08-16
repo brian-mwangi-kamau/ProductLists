@@ -40,6 +40,7 @@ def admin_profile(request):
         return render(request, 'admin_profile.html', {'product_form': product_form, 'products':products})
     
 # Deleting products listed
+"""
 def delete_product(request, id):
     product = get_object_or_404(Product, pk=id)
     if request.method == 'POST':
@@ -47,6 +48,7 @@ def delete_product(request, id):
         # Redirect to a page, or show a success message
 
     return render(request, 'delete_product.html', {'product': product})
+"""
 
 # Displaying products on the landing page
 def landing_page(request):
