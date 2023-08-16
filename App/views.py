@@ -40,8 +40,8 @@ def admin_profile(request):
         return render(request, 'admin_profile.html', {'product_form': product_form, 'products':products})
     
 # Deleting products listed
-def delete_product(request, product_id):
-    product = get_object_or_404(Product, pk=product_id)
+def delete_product(request, id):
+    product = get_object_or_404(Product, pk=id)
     if request.method == 'POST':
         product.delete()
         # Redirect to a page, or show a success message
@@ -54,8 +54,8 @@ def landing_page(request):
     return render(request, 'landing_page.html', {'products': products})
 
 # More details about product(s)
-def product_detail(request, product_id):
-    product = get_object_or_404(Product, pk=product_id)
+def product_detail(request, id):
+    product = get_object_or_404(Product, pk=id)
     return render(request, 'product_detail.html', {'product': product})
 
 
