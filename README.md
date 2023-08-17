@@ -9,6 +9,7 @@ Any developer who will use this project should not take any credits for it's bac
 What you'll need to run this code on your local machine:
 - Python 
 - Django 4.2
+- dotenv (pip install django-dotenv)
 - Django-jazzmin (you can comment out the jazzmin line in settings.py)
 - Postgresql
 
